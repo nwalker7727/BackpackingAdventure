@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class InventoryCollect : MonoBehaviour
 {
+    public GameObject me;
     // Start is called before the first frame update
     // Update is called once per frame
-    public void collection(){
+    public void stickCollection(){
         InventoryCount.sticks +=1;
         Debug.Log(InventoryCount.sticks);
-        gameObject.SetActive(false);
+        this.gameObject.SetActive(false);
+    }
+    public void mFlowerCollection(){
+        InventoryCount.mFlower += 1;
+        Debug.Log("mFlowers: " + InventoryCount.mFlower);
+        this.gameObject.SetActive(false);
     }
 }

@@ -9,10 +9,11 @@ public class ToggleCanvas : MonoBehaviour
     private void Start()
     {
         // Ensure both objects are initially in the desired state
-        if (objectToDisable != null)
+        /*if (objectToDisable != null)
             objectToDisable.SetActive(true);
         if (objectToEnable != null)
             objectToEnable.SetActive(false);
+    */
     }
 
     public void OnButtonClick()

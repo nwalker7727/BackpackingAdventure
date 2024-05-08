@@ -269,6 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2864de672e68bd6489dd9c137e509b2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  me: {fileID: 26636116}
 --- !u!1 &55426783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,7 +1323,7 @@ GameObject:
   - component: {fileID: 1046999026}
   - component: {fileID: 1046999025}
   - component: {fileID: 1046999024}
-  - component: {fileID: 1046999023}
+  - component: {fileID: 1046999027}
   m_Layer: 5
   m_Name: Stick (2)
   m_TagString: Untagged
@@ -1350,18 +1351,6 @@ RectTransform:
   m_AnchoredPosition: {x: -111, y: 131}
   m_SizeDelta: {x: 54.8309, y: 73.9512}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1046999023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046999021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2864de672e68bd6489dd9c137e509b2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1046999024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1406,9 +1395,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1046999023}
+      - m_Target: {fileID: 1046999027}
         m_TargetAssemblyTypeName: InventoryCollect, Assembly-CSharp
-        m_MethodName: collection
+        m_MethodName: stickCollection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1456,6 +1445,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046999021}
   m_CullTransparentMesh: 1
+--- !u!114 &1046999027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046999021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2864de672e68bd6489dd9c137e509b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  me: {fileID: 0}
 --- !u!1 &1122000702
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,6 +2392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2864de672e68bd6489dd9c137e509b2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  me: {fileID: 2063034532}
 --- !u!114 &2063034535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2436,7 +2439,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2063034534}
         m_TargetAssemblyTypeName: InventoryCollect, Assembly-CSharp
-        m_MethodName: collection
+        m_MethodName: stickCollection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

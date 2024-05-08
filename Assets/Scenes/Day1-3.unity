@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 66944027}
         m_TargetAssemblyTypeName: InventoryCollect, Assembly-CSharp
-        m_MethodName: collection
+        m_MethodName: stickCollection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -269,6 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2864de672e68bd6489dd9c137e509b2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  me: {fileID: 66944022}
 --- !u!1 &179827858
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2864de672e68bd6489dd9c137e509b2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  me: {fileID: 179827858}
 --- !u!114 &179827861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,7 +369,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 179827860}
         m_TargetAssemblyTypeName: InventoryCollect, Assembly-CSharp
-        m_MethodName: collection
+        m_MethodName: stickCollection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1275,6 +1277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2864de672e68bd6489dd9c137e509b2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  me: {fileID: 746421906}
 --- !u!114 &746421909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1321,7 +1324,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 746421908}
         m_TargetAssemblyTypeName: InventoryCollect, Assembly-CSharp
-        m_MethodName: collection
+        m_MethodName: stickCollection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
