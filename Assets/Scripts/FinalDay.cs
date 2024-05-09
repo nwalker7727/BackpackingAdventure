@@ -9,14 +9,14 @@ public class FinalDay : MonoBehaviour
     public GameObject sol2;
     // Start is called before the first frame update
     public void solution(){
-        if(gameObject == sol1 && InventoryCount.rope > 0){
-            InventoryCount.rope -= 1;
+        if(gameObject == sol1 && InventoryCount.Instance.Get("rope") > 0){
+            InventoryCount.Instance.Modify("rope", -1);
             sol1.SetActive(false);
             sol2.SetActive(false);
             traveler.SetActive(true);
         }
-        if(gameObject == sol2 && InventoryCount.sticks >= 8){
-            InventoryCount.sticks -= 8;
+        if(gameObject == sol2 && InventoryCount.Instance.Get("sticks") >= 8){
+            InventoryCount.Instance.Modify("sticks", -8);
             sol1.SetActive(false);
             sol2.SetActive(false);
             traveler.SetActive(true);

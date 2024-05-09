@@ -13,19 +13,19 @@ public class PrepDay : MonoBehaviour
             rope.SetActive(false);
             knife.SetActive(false);
             ductTape.SetActive(false);
-            InventoryCount.rope += 1;
+            InventoryCount.Instance.Modify("rope", 1);
         }
         if(gameObject == knife){
             rope.SetActive(false);
             knife.SetActive(false);
             ductTape.SetActive(false);
-            InventoryCount.knife +=1;
+            InventoryCount.Instance.Modify("knife", 1);
         }
         if(gameObject == ductTape){
             rope.SetActive(false);
             knife.SetActive(false);
             ductTape.SetActive(false);
-            InventoryCount.ductTape +=1;
+            InventoryCount.Instance.Modify("ductTape", 1);
         }
 
     }

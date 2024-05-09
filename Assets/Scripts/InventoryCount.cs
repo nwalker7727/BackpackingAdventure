@@ -2,20 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryCount
+public class InventoryCount : MonoBehaviour
 {
-    public static int sticks {get; set;}
-    public static int rope {get; set;}
-    public static int knife {get; set;}
-    public static int ductTape {get; set;}
-    public static int mFlower{get; set;}
-   
+    // Singleton instance
+    private static InventoryCount _instance;
+    public static InventoryCount Instance { get { return _instance; } }
 
-    /*public static int Get(string itemName)
+    // Inventory dictionary
+    public Dictionary<string, int> inventory = new Dictionary<string, int>{
+        {"rope", 0},
+        {"ductTape", 0},
+        {"knife", 0},
+        {"sticks", 0},
+        {"mFlower", 0}
+    };
+
+    private void Awake()
     {
-        if (itemCounts.ContainsKey(itemName))
+        // Singleton pattern implementation
+        if (_instance != null && _instance != this)
         {
-            return itemCounts[itemName];
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+    }
+
+    public int Get(string itemName)
+    {
+        if (inventory.ContainsKey(itemName))
+        {
+            return inventory[itemName];
         }
         else
         {
@@ -23,6 +43,16 @@ public class InventoryCount
             return 0; // Return 0 if item count is not found
         }
     }
-    */
-}
 
+    public void Modify(string itemName, int value)
+    {
+        if (inventory.ContainsKey(itemName))
+        {
+            inventory[itemName] += value;
+        }
+        else
+        {
+            Debug.LogError("Item count not found for: " + itemName);
+        }
+    }
+}
