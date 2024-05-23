@@ -17,4 +17,12 @@ public class InventoryCollect : MonoBehaviour
         //Debug.Log("mFlowers: " + InventoryCount.mFlower);
         this.gameObject.SetActive(false);
     }
+    public void rockCollection(){
+        InventoryCount.Instance.Modify("rocks", 1);
+        this.gameObject.SetActive(false);
+    }
+    public void sapCollection(){
+        InventoryCount.Instance.Modify("sap", 1);
+        this.gameObject.SetActive(false);
+    }
 }

@@ -15,8 +15,9 @@ public class FinalDay : MonoBehaviour
             sol2.SetActive(false);
             traveler.SetActive(true);
         }
-        if(gameObject == sol2 && InventoryCount.Instance.Get("sticks") >= 8){
-            InventoryCount.Instance.Modify("sticks", -8);
+        if(gameObject == sol2 && InventoryCount.Instance.Get("sticks") >= 5 && InventoryCount.Instance.Get("sap") >= 1){
+            InventoryCount.Instance.Modify("sticks", -5);
+            InventoryCount.Instance.Modify("sap", -1);
             sol1.SetActive(false);
             sol2.SetActive(false);
             traveler.SetActive(true);
