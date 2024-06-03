@@ -25,4 +25,12 @@ public class InventoryCollect : MonoBehaviour
         InventoryCount.Instance.Modify("sap", 1);
         this.gameObject.SetActive(false);
     }
+    public void berryCollection(){
+        InventoryCount.Instance.Modify("berries", 1);
+        this.gameObject.SetActive(false);
+    }
+    public void backPackCollection(){
+        InventoryCount.Instance.Modify("rope", 1);
+        this.gameObject.SetActive(false);
+    }
 }
