@@ -9,6 +9,12 @@ public class MainMenuController : MonoBehaviour
     public GameObject optionsMenu;
     // Start is called before the first frame update
    
+    public void Start(){
+        GameObject inv = GameObject.FindWithTag("inventory");
+        if(inv != null){
+            Destroy(inv);
+        }
+    }
     public void playGame(){
         SceneManager.LoadScene("Day1-P");
     }
