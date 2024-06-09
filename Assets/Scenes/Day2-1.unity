@@ -2886,7 +2886,7 @@ GameObject:
   - component: {fileID: 1541953660}
   - component: {fileID: 1541953659}
   m_Layer: 5
-  m_Name: Meadow-Background-1
+  m_Name: Mountain-Background-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
