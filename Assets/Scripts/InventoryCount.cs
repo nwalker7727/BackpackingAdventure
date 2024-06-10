@@ -17,7 +17,8 @@ public class InventoryCount : MonoBehaviour
         {"sap", 0},
         {"mFlower", 0},
         {"rocks", 0},
-        {"berries", 0}
+        {"berries", 0},
+        {"tarp", 0}
     };
 
     private void Awake()

@@ -30,7 +30,8 @@ public class InventoryCollect : MonoBehaviour
         this.gameObject.SetActive(false);
     }
     public void backPackCollection(){
-        InventoryCount.Instance.Modify("rope", 1);
+        InventoryCount.Instance.Modify("tarp", 1);
+        InventoryCount.Instance.Modify("ductTape", 1);
         this.gameObject.SetActive(false);
     }
 }
